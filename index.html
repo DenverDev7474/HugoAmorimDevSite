@@ -7,11 +7,9 @@
   </head>
   <body>
     <header>
-      <div class="logoContainer">
-        <img src="/Users/Hugo.Amorim/Desktop/Transfer/*Project/HugoAmorimDevSite/Images/Hugo_Logo.png" alt="Hugo Logo" class="logo">
-      </div>
-      <h1>Hi, I am a Digital Alchemist</h1>
-      <p> I turn ideas into user-friendly products with code, design, and innovation.
+      <a href="./index.html">
+        <img src="Images/Hugo_Logo.png" alt="Hugo Logo" class="logo">
+      </a>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -21,6 +19,10 @@
         </ul>
       </nav>
     </header>
+    <Section class="banner">
+      <h1>Hi, I am a Digital Alchemist.</h1>
+      <p> I turn ideas into user-friendly products with code, design, and innovation.</p>
+    </Section>
     <section id="about">
       <h2>About</h2>
       <p> As a full-stack developer, I am passionate about finding intuitive solutions to difficult problems. I think that the best technology is simple and has the power to change the way we do things. My background in design allows me to approach programming in a creative way, always considering the best user experience. I have honed my skills in learning and adding new programming languages to my toolkit, and I am always excited to learn more.</p>
@@ -28,35 +30,69 @@
     <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li>
-          <img src="./images/portfolio_1.png" alt="Project 1">
-          <h3 class="portTitle">React Native Hiking App</h3>
-          <p class="portfolioDesc">A brief description of the project, including technologies used and a link to the live site or GitHub repository.</p>
+        <li class="card">
+          <h3 class="portTitle">A Social Hiking App</h3>
+          <p class="portfolioDesc">The app is designed using React Native and the MERN stack to help hikers connect with each other for hiking in Colorado's 14ers region.</p> 
+          <a class="button link" href="./portfolio/HikingApp.html">
+            View Project 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="padding-left: .5rem; width: 1rem; height: 1rem; fill: currentcolor;">
+              <g data-name="Layer 2">
+                <g data-name="external-link">
+                  <rect width="24" height="24" opacity="0"></rect>
+                  <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z"></path>
+                  <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z"></path>
+                </g>
+              </g>
+            </svg>
+          </a>
         </li>
-        <li>
-          <img src="./images/portfolio_1.png" alt="Project 1">
-          <h3 class="portTitle">Medical Platform Application</h3>
-          <p class="portfolioDesc">A brief description of the project, including technologies used and a link to the live site or GitHub repository.</p>
+        <li class="card">
+          <h3 class="portTitle">A Medical Platform App</h3>
+          <p class="portfolioDesc">This is a React/Redux application that enables doctors to access patients' health data and determine the appropriate treatments to recommend.</p>
+          <a class="button link" href="./portfolio/MedicalPlatform.html">
+            View Project 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="padding-left: .5rem; width: 1rem; height: 1rem; fill: currentcolor;">
+              <g data-name="Layer 2">
+                <g data-name="external-link">
+                  <rect width="24" height="24" opacity="0"></rect>
+                  <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z"></path>
+                  <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z"></path>
+                </g>
+              </g>
+            </svg>
+          </a>
         </li>
-        <li>
-          <img src="./images/portfolio_1.png" alt="Project 1">
-          <h3 class="portTitle">HVAC Diagnosis App</h3>
-          <p class="portfolioDesc">A brief description of the project, including technologies used and a link to the live site or GitHub repository.</p>
+        <li class="card">
+          <h3 class="portTitle">A HVAC Diagnosis App</h3>
+          <p class="portfolioDesc">This is an application designed for a leading HVAC company, which facilitates the diagnosis and testing of HVAC equipment, thereby enabling technicians to carry out their job efficiently.</p>
+          <a class="button link" href="./portfolio/HvacApp.html">
+            View Project 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="padding-left: .5rem; width: 1rem; height: 1rem; fill: currentcolor;">
+              <g data-name="Layer 2">
+                <g data-name="external-link">
+                  <rect width="24" height="24" opacity="0"></rect>
+                  <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z"></path>
+                  <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z"></path>
+                </g>
+              </g>
+            </svg>
+          </a>
         </li>
-        <li>
-          <img src="./images/portfolio_1.png" alt="Project 1">
-          <h3 class="portTitle">Insurance Assessment Calculators</h3>
-          <p class="portfolioDesc">A brief description of the project, including technologies used and a link to the live site or GitHub repository.</p>
-        </li>
-        <li>
-          <img src="./images/portfolio_1.png" alt="Project 1">
-          <h3 class="portTitle">Coin Grading Application</h3>
-          <p class="portfolioDesc">A brief description of the project, including technologies used and a link to the live site or GitHub repository.</p>
-        </li>
-        <li>
-          <img src="./images/portfolio_1.png" alt="Project 1">
-          <h3 class="portTitle">Oil drilling Inventory Application</h3>
-          <p  class="portfolioDesc">A brief description of the project, including technologies used and a link to the live site or GitHub repository.</p>
+        <li class="card">
+          <h3 class="portTitle">An Insurance Assessment Calculators App</h3>
+          <p class="portfolioDesc">This is an application that utilizes JavaScript functions to compute health indicator measurements for a risk assessment insurance. </p>
+          <a class="button link" href="./portfolio/InsuranceCalcApp.html">
+            View Project 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="padding-left: .5rem; width: 1rem; height: 1rem; fill: currentcolor;">
+              <g data-name="Layer 2">
+                <g data-name="external-link">
+                  <rect width="24" height="24" opacity="0"></rect>
+                  <path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z"></path>
+                  <path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z"></path>
+                </g>
+              </g>
+            </svg>
+          </a>  
         </li>
       </ul>
     </section>
@@ -107,15 +143,15 @@
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <h3>Email:</h3>
-      <p>Hugo.amorim.dev@gmail.com</p>
-      <h3>Phone:</h3>
-      <p>508-640-7062</p>
-      <h3>LinkedIn:</h3>
-      <p><a href="https://www.linkedin.com/in/Hamorim">https://www.linkedin.com/in/Hamorim</a></p>
+      <h3 class="contactHeader">Email:</h3>
+      <p class="contactInfo">Hugo.amorim.dev@gmail.com</p>
+      <h3 class="contactHeader">Phone:</h3>
+      <p class="contactInfo">508-640-7062</p>
+      <h3 class="contactHeader">LinkedIn:</h3>
+      <p class="contactInfo"><a href="https://www.linkedin.com/in/Hamorim">https://www.linkedin.com/in/Hamorim</a></p>
     </section>
-    <footer>
-      <p>Copyright © 2022 Hugo Amorim</p>
+    <footer class="footer">
+      <p>Copyright ©2022 Hugo Amorim</p>
     </footer>
   </body>
 </html>
