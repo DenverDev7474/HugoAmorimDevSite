@@ -5,7 +5,16 @@ navLinks.forEach(link => {
     e.preventDefault(); // Prevent the default link behavior
     const sectionId = link.getAttribute('href'); // Get the section ID from the link's href attribute
     const section = document.querySelector(sectionId); // Find the section on the page
-    section.scrollIntoView({ behavior: 'smooth' }); // Scroll to the section smoothly
+
+    // add pixel offset to account for the fixed header
+    const offset = 200;
+    const sectionTop = section.offsetTop - offset;
+    
+    window.scrollTo({
+      top: sectionTop,
+      behavior: 'smooth'
+    }); // Scroll to the section smoothly
+
   });
 });
 
