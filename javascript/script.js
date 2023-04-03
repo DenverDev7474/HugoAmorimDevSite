@@ -1,20 +1,42 @@
-// Select all the navigation links and add an event listener to each one
 const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent the default link behavior
-    const sectionId = link.getAttribute('href'); // Get the section ID from the link's href attribute
-    const section = document.querySelector(sectionId); // Find the section on the page
-
-    // add pixel offset to account for the fixed header
-    const offset = 200;
-    const sectionTop = section.offsetTop - offset;
     
-    window.scrollTo({
-      top: sectionTop,
-      behavior: 'smooth'
-    }); // Scroll to the section smoothly
+    const currentPagePath = window.location.pathname;
+    if (currentPagePath === "/index.html") {
+      e.preventDefault(); // Prevent the default link behavior
+      const sectionId = link.getAttribute('href'); // Get the section ID from the link's href attribute
+      const section = document.querySelector(sectionId); // Find the section on the page
 
+      // add pixel offset to account for the fixed header
+      const offset = 200;
+      const sectionTop = section.offsetTop - offset;
+
+      window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth'
+      }); // Scroll to the section smoothly
+    }
+    else {
+      // If the user is not on the home page, redirect them to the home page
+      window.location.href = "/index.html";
+
+      // Wait for the page to load before scrolling to the section
+      window.onload = function() {
+        e.preventDefault(); // Prevent the default link behavior
+        const sectionId = link.getAttribute('href'); // Get the section ID from the link's href attribute
+        const section = document.querySelector(sectionId); // Find the section on the page
+
+        // add pixel offset to account for the fixed header
+        const offset = 200;
+        const sectionTop = section.offsetTop - offset;
+
+        window.scrollTo({
+          top: sectionTop,
+          behavior: 'smooth'
+        }); // Scroll to the section smoothly
+      }
+    }
   });
 });
 
@@ -49,3 +71,4 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+

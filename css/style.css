@@ -213,6 +213,75 @@ a:hover {
   cursor: pointer;
 }
 
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Orderlist li {
+  list-style: number;
+  padding-top: 1rem;
+}
+
+.Orderlist li:first-child {
+  padding-top: 0rem;
+}
+
+.Orderlist li:last-child {
+  padding-bottom: 2rem;
+}
+
+ol {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+.overviewList {
+  margin-top: 0rem;
+}
+
+.overviewHeader {
+  margin-bottom: .5rem;
+  margin-top: 0rem;
+}
+
+.specs {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.stacks {
+  padding: 1rem;
+  border: 1px solid #1a7eb8;  
+  margin-right: 1rem;
+  width: 25%;
+}
+
+.stacks:last-child {
+  margin-right: 0;
+}
+
+.portSection:first-child {
+  padding-top: 2rem;
+}
+
+section + .portSection {
+  padding-top: 0rem;
+}
+
+
 .footer {
   background-color: rgba(79, 76, 77, 0.05);
   text-align: center;
@@ -238,6 +307,8 @@ footer {
 footer p {
   margin: 0;
 }
+
+
 
 
 @media (max-width: 768px) {
@@ -301,6 +372,30 @@ footer p {
   li {
     font-size: 1rem;
   }
+
+  .stacks {
+    padding: 1rem;
+    border: 1px solid #1a7eb8;  
+    margin-right: 1rem;
+    flex:1;
+  }
+
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .linksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
 
 }
 
