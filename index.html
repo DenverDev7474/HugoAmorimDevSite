@@ -1,100 +1,217 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hugo Amorim: Full Stack Digital Alchemist </title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="./javascript/script.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1>Hi, I'am a Digital Alchemist</h1>
-      <p> I turn ideas into user-friendly products with code, design, and innovation.
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section id="about">
-      <h2>About</h2>
-      <p> As a full-stack developer, I am passionate about finding intuitive solutions to difficult problems. I think that the best technology is simple and has the power to change the way we do things. My background in design allows me to approach programming in a creative way, always considering the best user experience. I have honed my skills in learning and adding new programming languages to my toolkit, and I am always excited to learn more.</p>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <img src="./images/project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>A brief description of the project, including technologies used and a link to the live site or GitHub repository.</p>
+<html lang="eng">
+
+<head>
+  <title>Hugo Amorim: Full Stack Digital Alchemist </title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#banner" class="nav-logo">
+        <img src="images/Hugo_Logo.png" alt="Hugo Logo" class="logo">
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
         </li>
-        <li>
-          <img src="./images/project1.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>A brief description of the project, including technologies used and a link to the live site or GitHub repository.</p>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
         </li>
-        <li>
-          <img src="./images/project1.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>A brief description of the project, including technologies used and a link to the live site or GitHub repository.</p>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
         </li>
       </ul>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <h3>LANGUAGES/FRAMEWORKS</h3>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>ES6 JavaScript</li>
-        <li>Typescript</li>
-        <li>React / Angular / Vue</li>
-        <li>React Native</li>
-        <li>Redux Toolkit / RTK query</li>
-        <li>Restful APIs</li>
-        <li>SQL / NoSQL Databases</li>
-        <li>AWS Services</li>
-        <li>Serverless - Lambdas</li>
-        <li>Jest & React Testing</li>
-        <li>MERN Stack</li>
-        <li>GraphQL</li>
-      </ul>
-      <h3>DESIGN TOOLS</h3>
-      <ul>
-        <li>Bootstrap / Tailwinds</li>
-        <li>CSS Grid & Flexbox</li>
-        <li>Adobe Creative Suite</li>
-        <li>Sketch / Figma</li>
-        <li>InVision</li>          
-      </ul>
-      <h3>DESIGN TOOLS</h3>
-      <ul>
-        <li>Xcode / Android Studio</li>
-        <li>Git/GitHub</li>
-        <li>Waffle.io</li>
-        <li>Trello</li>
-        <li>Jira/ Confluence</li>
-      </ul>
-      <h3>METHODS</h3>
-      <ul>
-        <li>Agile Development</li>
-        <li>TDD / Unit Testing</li>
-        <li>Pair Programming</li>
-        <li>Responsive Design</li>
-        <li>UI/UX Methodologies</li>
-        <li>MVC/ MVVM</li>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: Hugo.amorim.dev@gmail.com</p>
-      <p>Phone: 508-640-7062</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/Hamorim">https://www.linkedin.com/in/Hamorim</a></p>
-    </section>
-    <footer>
-      <p>Copyright © 2022 Hugo Amorim</p>
-    </footer>
-  </body>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <section class="banner" id="banner">
+    <div class="bannerContainer">
+      <img src="./images/portrait.jpeg" alt="HugosPicture" class="portrait fadeIn-animation">
+      <div class="banner-text float-animation">
+        <h1>Hi, I am a Digital Alchemist.</h1>
+        <p> I turn ideas into user-friendly products with code, design, and innovation.</p>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About</h2>
+    <p>As a full-stack developer, I am passionate about finding intuitive solutions to difficult problems. I think that
+      the best technology is simple and has the power to change the way we do things. My background in design allows me
+      to approach programming in a creative way, always considering the best user experience. I have honed my skills in
+      learning and adding new programming languages to my toolkit, and I am always excited to learn more.</p>
+    <p>I've had the pleasure of learning from great institutions like Le Wagon, where I completed an immersive Full
+      Stack Web Development Bootcamp, diving deep into languages like Ruby and JavaScript. At General Assembly, I honed
+      my UX design skills, mastering tools like Sketch and Invision to create user-friendly designs. Most recently, I've
+      been a part of EY's Product Management Academy, where I picked up agile methodologies, scrum, and product
+      development strategies to manage products effectively. Each of these experiences has shaped me into the versatile
+      and growth-oriented developer I am today.</p>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li class="card">
+        <h3 class="portTitle">53 Peaks - A social hiking app</h3>
+        <p class="portfolioDesc"> As an avid hiker who has completed 38 14er's, one of the biggest problems in the
+          community is connecting with fellow hikers. This is a social hiking app, built with React
+            Native and the MERN stack, to help Coloradans meet up for hikes, carpool and get
+          information about the mountains.</p>
+        <a class="button link" href="./portfolio/HikingApp.html">
+          View Project
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            style="padding-left: .5rem; width: 1rem; height: 1rem; fill: currentcolor;">
+            <g data-name="Layer 2">
+              <g data-name="external-link">
+                <rect width="24" height="24" opacity="0"></rect>
+                <path
+                  d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z">
+                </path>
+                <path
+                  d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="card">
+        <h3 class="portTitle">Medical Platform App</h3>
+        <p class="portfolioDesc">Access to a patient's medical history is integral when providing treatment options.
+          With this in mind, a top healthcare company retained us to create an app using
+          React/Redux to populate a patient's health data and recommend appropriate treatment.
+        </p>
+        <a class="button link" href="./portfolio/MedicalPlatform.html">
+          View Project
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            style="padding-left: .5rem; width: 1rem; height: 1rem; fill: currentcolor;">
+            <g data-name="Layer 2">
+              <g data-name="external-link">
+                <rect width="24" height="24" opacity="0"></rect>
+                <path
+                  d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z">
+                </path>
+                <path
+                  d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="card">
+        <h3 class="portTitle">HVAC Diagnosis App</h3>
+        <p class="portfolioDesc">A world leader in heating, air-conditioning and refrigeration solutions retained us to
+          design an app using React/Redux that facilitates the diagnosis and testing of HVAC equipment.
+        </p>
+        <a class="button link" href="./portfolio/HvacApp.html">
+          View Project
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            style="padding-left: .5rem; width: 1rem; height: 1rem; fill: currentcolor;">
+            <g data-name="Layer 2">
+              <g data-name="external-link">
+                <rect width="24" height="24" opacity="0"></rect>
+                <path
+                  d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z">
+                </path>
+                <path
+                  d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="card">
+        <h3 class="portTitle">Insurance Risk Assessment App</h3>
+        <p class="portfolioDesc">This is an application that utilizes JavaScript function to compute
+          health indicators for a risk assessment re-insurance. </p>
+        <a class="button link" href="./portfolio/InsuranceCalcApp.html">
+          View Project
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            style="padding-left: .5rem; width: 1rem; height: 1rem; fill: currentcolor;">
+            <g data-name="Layer 2">
+              <g data-name="external-link">
+                <rect width="24" height="24" opacity="0"></rect>
+                <path
+                  d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z">
+                </path>
+                <path
+                  d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>LANGUAGES/FRAMEWORKS</h3>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>ES6 JavaScript</li>
+      <li>Typescript</li>
+      <li>React / Angular / Vue</li>
+      <li>React Native</li>
+      <li>Redux Toolkit / RTK query</li>
+      <li>Restful APIs</li>
+      <li>SQL / NoSQL Databases</li>
+      <li>AWS Services</li>
+      <li>Serverless - Lambdas</li>
+      <li>Jest & React Testing</li>
+      <li>MERN Stack</li>
+      <li>GraphQL</li>
+    </ul>
+    <h3>DESIGN TOOLS</h3>
+    <ul>
+      <li>Bootstrap / Tailwinds</li>
+      <li>CSS Grid & Flexbox</li>
+      <li>Adobe Creative Suite</li>
+      <li>Sketch / Figma</li>
+      <li>InVision</li>
+    </ul>
+    <h3>COLLABORATION TOOLS</h3>
+    <ul>
+      <li>Xcode / Android Studio</li>
+      <li>Git/GitHub</li>
+      <li>Waffle.io</li>
+      <li>Trello</li>
+      <li>Jira/ Confluence</li>
+    </ul>
+    <h3>METHODS</h3>
+    <ul>
+      <li>Agile Development</li>
+      <li>TDD / Unit Testing</li>
+      <li>Pair Programming</li>
+      <li>Responsive Design</li>
+      <li>UI/UX Methodologies</li>
+      <li>MVC/ MVVM</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <h3 class="contactHeader">Email:</h3>
+    <a href="mailto:Hugo.amorim.dev@gmail.com" class="contactInfo">Hugo.amorim.dev@gmail.com</a>
+    <h3 class="contactHeader">Phone:</h3>
+    <p class="contactInfo">508-641-7062</p>
+    <h3 class="contactHeader">LinkedIn:</h3>
+    <a href="https://www.linkedin.com/in/Hamorim">https://www.linkedin.com/in/Hamorim</a>
+  </section>
+  <footer class="footer">
+    <p>Copyright <span>&copy</span>2022 Hugo Amorim</p>
+  </footer>
+  <script src="./javascript/script.js"></script>
+</body>
+
 </html>
