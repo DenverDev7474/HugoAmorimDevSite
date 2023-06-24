@@ -1,4 +1,4 @@
-# Hugo Amorim's Personal Portfilio
+# Hugo Amorim's Personal Portfolio
 
 ## Description
 Basic portfolio page to showcase my work and skills. 
