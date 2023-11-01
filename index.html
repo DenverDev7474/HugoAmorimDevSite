@@ -4,13 +4,14 @@
 <head>
   <title>Hugo Amorim: Full Stack Digital Alchemist </title>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <header class="header">
     <nav class="navbar">
-      <a href="#banner" class="nav-logo">
+      <a class="nav-logo">
         <img src="images/Hugo_Logo.png" alt="Hugo Logo" class="logo">
       </a>
       <ul class="nav-menu">
@@ -156,57 +157,76 @@
   </section>
   <section id="skills">
     <h2>Skills</h2>
-    <h3>LANGUAGES/FRAMEWORKS</h3>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>ES6 JavaScript</li>
-      <li>Typescript</li>
-      <li>React / Angular / Vue</li>
-      <li>React Native</li>
-      <li>Redux Toolkit / RTK query</li>
-      <li>Restful APIs</li>
-      <li>SQL / NoSQL Databases</li>
-      <li>AWS Services</li>
-      <li>Serverless - Lambdas</li>
-      <li>Jest & React Testing</li>
-      <li>MERN Stack</li>
-      <li>GraphQL</li>
-    </ul>
-    <h3>DESIGN TOOLS</h3>
-    <ul>
-      <li>Bootstrap / Tailwinds</li>
-      <li>CSS Grid & Flexbox</li>
-      <li>Adobe Creative Suite</li>
-      <li>Sketch / Figma</li>
-      <li>InVision</li>
-    </ul>
-    <h3>COLLABORATION TOOLS</h3>
-    <ul>
-      <li>Xcode / Android Studio</li>
-      <li>Git/GitHub</li>
-      <li>Waffle.io</li>
-      <li>Trello</li>
-      <li>Jira/ Confluence</li>
-    </ul>
-    <h3>METHODS</h3>
-    <ul>
-      <li>Agile Development</li>
-      <li>TDD / Unit Testing</li>
-      <li>Pair Programming</li>
-      <li>Responsive Design</li>
-      <li>UI/UX Methodologies</li>
-      <li>MVC/ MVVM</li>
-    </ul>
+    <div class="skillGroup">
+      <h3 class="skillHeader">LANGUAGES/FRAMEWORKS</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>ES6 JavaScript</li>
+        <li>Typescript</li>
+        <li>React / Angular / Vue</li>
+        <li>React Native</li>
+        <li>Redux Toolkit / RTK query</li>
+        <li>Restful APIs</li>
+        <li>SQL / NoSQL Databases</li>
+        <li>AWS Services</li>
+        <li>Serverless - Lambdas</li>
+        <li>Jest & React Testing</li>
+        <li>MERN Stack</li>
+        <li>GraphQL</li>
+      </ul>
+    </div>
+    <div class="skillGroup">
+      <h3 class="skillHeader">DESIGN TOOLS</h3>
+      <ul>
+        <li>Bootstrap / Tailwinds</li>
+        <li>CSS Grid & Flexbox</li>
+        <li>Adobe Creative Suite</li>
+        <li>Sketch / Figma</li>
+        <li>InVision</li>
+      </ul>
+    </div>
+    <div class="skillGroup">
+      <h3 class="skillHeader">COLLABORATION TOOLS</h3>
+      <ul>
+        <li>Xcode / Android Studio</li>
+        <li>Git/GitHub</li>
+        <li>Waffle.io</li>
+        <li>Trello</li>
+        <li>Jira/ Confluence</li>
+      </ul>
+    </div>
+    <div class="skillGroup">
+      <h3 class="skillHeader">METHODS</h3>
+      <ul>
+        <li>Agile Development</li>
+        <li>TDD / Unit Testing</li>
+        <li>Pair Programming</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Methodologies</li>
+        <li>MVC/ MVVM</li>
+      </ul>
+    </div>
   </section>
   <section id="contact">
     <h2>Contact</h2>
-    <h3 class="contactHeader">Email:</h3>
-    <a href="mailto:Hugo.amorim.dev@gmail.com" class="contactInfo">Hugo.amorim.dev@gmail.com</a>
-    <h3 class="contactHeader">Phone:</h3>
-    <p class="contactInfo">508-641-7062</p>
-    <h3 class="contactHeader">LinkedIn:</h3>
-    <a href="https://www.linkedin.com/in/Hamorim">https://www.linkedin.com/in/Hamorim</a>
+    <div class="contactGroup">
+        <h3 class="contactHeader">Email:</h3>
+        <a href="mailto:Hugo.amorim.dev@gmail.com" class="contactInfo">Hugo.amorim.dev@gmail.com</a>
+    </div>
+    <div class="contactGroup">
+        <h3 class="contactHeader">Phone:</h3>
+        <a href="tel:508-641-7062" class="contactInfo">508-641-7062</a>
+    </div>
+    <div class="contactGroup">
+        <h3 class="contactHeader">Social Links:</h3>
+        <a href="https://www.github.com/denverdev7474" class="contactInfo">
+            <i class="fab fa-github"></i> GitHub Profile
+        </a>
+        <a href="https://www.linkedin.com/in/Hamorim" class="contactInfo">
+          <i class="fab fa-linkedin"></i> LinkedIn Profile
+        </a>
+    </div>
   </section>
   <footer class="footer">
     <p>Copyright <span>&copy</span>2022 Hugo Amorim</p>

@@ -58,24 +58,18 @@ a:hover {
 }
 
 /* Styles for header*/
-header {
+.navbar {
   background-color: rgba(246, 246, 246);
   padding: .5rem 3rem;
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: 10;
-}
-
-.navbar {
   display: flex;
+  flex: 1;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  width: 25%;
-  height: 25%;
+.nav-logo img {
+  width: 15em;
 }
 
 .nav-menu {
@@ -101,15 +95,7 @@ header {
   display: none;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
+
 
 /* Banner Section */
 .banner {
@@ -220,7 +206,7 @@ header {
 }
 
 /* Skills Section */
-#skills h3 {
+.skillHeader {
   font-size: 1rem;
 }
 
@@ -230,6 +216,10 @@ header {
   column-width: 30%;
   justify-content: space-between;
   margin-bottom: 15px;
+}
+
+.skillGroup {
+  margin-bottom: 3rem;
 }
 
 #skills li {
@@ -333,31 +323,47 @@ ol {
 }
 
 /*  Contact Section  */
+
+.contactGroup {
+  margin-bottom: 2rem;
+}
+
 .contactHeader {
-  margin-bottom: 0;
+  margin-bottom: .5rem;
+  margin-top: 0rem;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .contactInfo {
-  margin-top: 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: #0077b5; /* LinkedIn blue color */
+  background-color: #e1e1e1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
 }
+
+.contactInfo:hover {
+  background-color: #0077b5;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
 
 /* Footer Section  */
 .footer {
   background-color: rgba(79, 76, 77, 0.05);
   text-align: center;
   padding: 1rem;
-  color: #1a7eb8;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
 }
 
 footer p {
   margin: 0;
+  font-size: 1em;
 }
 
 /* Styles for screens with a max-width of 768px (tablets) */
@@ -367,30 +373,30 @@ footer p {
   }
 
   .logo {
-    width: 75%;
-    height: 75%;
+    width: 13em;
   }
 }
 
 /* Styles for screens with a max-width of 480px (mobile phones) */
 @media (max-width: 480px) {
   /* Header */
-  .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-  }
-
   .logo {
-    width: 55%;
-    height: 55%;
+    width: 8em;
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
   }
 
   .hamburger.active .bar:nth-child(2) {
